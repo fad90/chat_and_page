@@ -14,8 +14,6 @@ html {
   box-sizing: inherit;
 }
 .page {
-  display: flex;
-  flex-direction: column;
   max-width: 768px;
   margin: 0 auto;
 }
@@ -35,6 +33,7 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 10px 12px 10px 13px;
+  flex-direction: column;
 }
 
 .squares {
@@ -42,18 +41,19 @@ html {
   height: 492px;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 .squares_big {
   height: 100%;
   background-color: #A2A9B7;
   width: 100%;
-  flex: 2;
+  flex: 2 1 492px;
   margin-right: 5px;
 }
 .squares_small {
   height: 100%;
   width: 100%;
-  flex: 1;
+  flex: 1 1 241px;
   margin-left: 5px;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,51 @@ html {
   height: 100%;
   margin-top: 5px;
 }
+.rectangles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.rectangles_all {
+  background-color: forestgreen;
+  height: 155px;
+  width: 100px;
+  flex: 1 1 241px;
+}
+.rectangles__margin {
+  margin-bottom: 10px;
+}
+.rectangles_small_up_left {
+  margin: 0 5px 10px 0;
+}
+.rectangles_small_centr {
+  margin: 0 5px 10px 5px;
+}
+.rectangles_small_up_right {
+  margin: 0 0 10px 5px;
+}
+.rectangles_large {
+  background-color: goldenrod;
+  flex: 2 1 491px;
+  margin-right: 5px;
+}
+.rectangles_small_down {
+  margin-left: 5px;
+}
 
+.squiares_big_to-the-right {
+  order: 2;
+
+}
+.squiares_small_to-the-left {
+  order: 1;
+}
+/* .rectangle_down {
+  background-color: goldenrod;
+  height: 155px;
+  width: 100px;
+} */
 
 /* .footer {
   display: flex;
