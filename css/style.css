@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #000000;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 html {
   -webkit-box-sizing: border-box;
@@ -45,17 +45,26 @@ html {
   padding: 30px 46px 53px 25px;
   background-color: #A2A9B7;
   margin: 5px;
-  height: calc((100vw - 35px) / 733 * 492);
-  width: calc((100vw - 35px) / 733 * 492);
   max-width: 492px;
   max-height: 492px;
   color: #ffffff;
+  height: calc((100vw - 35px) / 733 * 492);
+  width: calc((100vw - 35px) / 733 * 492);
 }
+.square_large-text {
+  margin: 0;
+  font-size: 18.1121px;
+  line-height: 26px;
+  text-align: center;
+}
+
+
 .square_small {
   display: flex;
   flex-direction: column;
-  width: calc((100vw - 35px) / 733 * 241);
+  width: calc((100vw - 35px) / 733 * 492);
   max-width: 241px;
+  margin: 0 5px 0 0;
 }
 .square_small_gray {
   background-color: #A2A9B7;
@@ -66,12 +75,6 @@ html {
   color: #ffffff;
   display: flex;
   align-items: flex-end;
-}
-.square_large-text {
-  margin: 0;
-  font-size: 18.1121px;
-  line-height: 26px;
-  text-align: center;
 }
 .square_small-text {
   margin: 0;
@@ -85,7 +88,7 @@ html {
 }
 .rectangle_light-gray {
   max-width: 502px;
-  width: 100%;
+  width: 67%;
 }
 .rectangle_light-gray_up {
   display: flex;
