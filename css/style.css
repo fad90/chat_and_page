@@ -41,17 +41,15 @@ html {
   display: flex;
   flex-direction: row;
 }
-.square_large {
+.block {
   padding: 30px 46px 53px 25px;
-  background-color: #A2A9B7;
   margin: 5px;
   max-width: 492px;
   max-height: 492px;
-  color: #ffffff;
   height: calc((100vw - 35px) / 733 * 492);
   width: calc((100vw - 35px) / 733 * 492);
 }
-.square_large-text {
+.block__text {
   margin: 0;
   font-size: 18.1121px;
   line-height: 26px;
@@ -59,24 +57,28 @@ html {
 }
 
 
-.square_small {
+.column {
   display: flex;
   flex-direction: column;
+}
+.square-small__container {
   width: calc((100vw - 35px) / 733 * 492);
   max-width: 241px;
   margin: 0 5px 0 0;
 }
-.square_small_gray {
-  background-color: #A2A9B7;
+.column__square-small {
   padding: 101px 15px 15px 15px;
   margin: 5px;
   width: 100%;
   height: 50%;
-  color: #ffffff;
   display: flex;
   align-items: flex-end;
 }
-.square_small-text {
+.square_gray {
+  background-color: #A2A9B7;
+  color: #ffffff;
+}
+.column__square-small__text {
   margin: 0;
 }
 
@@ -84,9 +86,12 @@ html {
 .rectangle {
   display: flex;
   flex-direction: row;
-  
 }
-.rectangle_light-gray {
+.rectangle__box {
+  display: flex;
+  align-items: flex-end;
+}
+.rectangle__container {
   max-width: 502px;
   width: 67%;
 }
@@ -95,7 +100,6 @@ html {
   flex-direction: row;
 }
 .rectangle_light-gray_small {
-  background-color: #E8EBED;
   margin: 5px;
   padding: 15px;
   width: 100%;
@@ -105,11 +109,13 @@ html {
 .rectangle_light-gray_small_right {
   max-width: 240px;
 }
-.rectangle_light-gray_large {
-  background-color: #E8EBED;
+.rectangle__large {
   margin: 5px;
   padding: 15px;
   min-height: 155px;
+}
+.rectangle_light-gray {
+  background-color: #E8EBED;
 }
 .rectangle_blue-orange {
   width: 32%;
@@ -131,5 +137,51 @@ html {
   min-height: 155px;
 }
 .rectangle__text {
+  margin: 0;
+}
+.rectangle_pink {
+  background-color: #FFAA87;
+}
+.rectangle_carnation {
+  background-color: #F55E62;
+}
+.rectangle_lavender {
+  background-color: #C7ABD4;
+}
+
+.square_green {
+  background-color: #E3EBD3;
+}
+.square_small_green {
+  order: 1;
+}
+.square_large_green {
+  order: 2;
+  margin-left: 10px;
+}
+
+.rectangle_pink-purple {
+  order: 1;
+}
+.rectangle_pink-red {
+  order: 2;
+}
+.column__ship {
+  background: url(/img/ship.jpg) 0 0 no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.column__image {
+  margin: 5px;
+  width: 100%;
+  height: 50%;
+  color: #ffffff;
+  position: relative;
+}
+.column__image__text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
   margin: 0;
 }
