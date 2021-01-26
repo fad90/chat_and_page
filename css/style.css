@@ -191,7 +191,7 @@ html {
   width: 100%;
   flex: 0 1 100%;
 } */
-.content {
+/* .content {
   padding: 15px;
 }
 .content__container {
@@ -221,7 +221,46 @@ html {
   position: absolute;
   right: 0;
   bottom: -4px;
+} */
+.content {
+  padding: 15px;
 }
+.content__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  position: relative;
+}
+.content__container::after {
+  content: "";
+  border-bottom: 1px dotted black;
+  position: absolute;
+  width: 100%;
+  bottom: 4px;
+  z-index: 1;
+}
+.content__name {
+  max-width: 240px;
+  position: relative;
+  z-index: 5;
+  flex: 0 1 100%;
+  text-align: left;
+  display: block;
+}
+.content__name__text {
+  background: #E3EBD3;
+}
+.content__value {
+  max-width: 221px;
+  position: relative;
+  z-index: 5;
+  flex: 0 1 100%;
+  text-align: right;
+}
+.content__value__text {
+  background: #E3EBD3;
+}
+
 
 
 .rectangle_pink-purple {
